@@ -1,0 +1,9 @@
+spring:
+  kafka:
+    streams:
+      application-id: kafka-streams-springboot-app
+      bootstrap-servers: localhost:29092
+      default:
+        key-serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+        value-serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+#      state-dir: /tmp/kafka-streams  # Optional for local state stores
